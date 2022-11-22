@@ -457,7 +457,7 @@ section {
     color: var(--link-text-color);
 }
 .footer-social-container {
-    margin-right: 93px;
+    margin-right: auto;
 }
 
 /* FOOTER FORM */
@@ -489,6 +489,7 @@ section {
     border-radius: 4px;
     padding-left: 16px;
     background-color: transparent;
+    color: var(--hero-text-color)
 }
 .footer-form-input::placeholder {
         font-weight: 400;
@@ -577,15 +578,21 @@ textarea:focus-visible {
 .modal-form {
     padding: 40px;
 }
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group textarea {
+    margin-bottom: 20px;
+}
 .modal-form-label {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;  
+      
 }
 .modal-form-label input {  
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.534);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
     transition: var(--animation)
@@ -594,8 +601,6 @@ textarea:focus-visible {
 .modal-form-label:focus-within textarea {
     border: 1px solid var(--link-text-color);
 }
-
-
 .modal-form-label textarea {
     height: 120px;
     resize: none;
@@ -632,8 +637,9 @@ textarea:focus-visible {
 }
 .modal-input-icon {
     position: absolute;
-    bottom: 11px;
+    top: 50%;
     left: 12px;
+    transition: var(--animation);
 }
 .modal-form-label:focus-within .modal-input-icon {
     fill: var(--link-text-color)
@@ -665,11 +671,9 @@ textarea:focus-visible {
     border-color: transparent;
     background-color: var(--link-text-color);
 }
-.form-agreement-text {
-    
+.form-agreement-text {  
         line-height: 1.71;
         color: var(--secondary-text-color);
-
 }
 .form-agreement-link {
     font-weight: 400;
@@ -679,8 +683,7 @@ textarea:focus-visible {
 }
 .modal-form-btn {
     display: block;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 /* Page 2 - portfolio */
 
